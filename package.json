@@ -1,0 +1,24 @@
+{
+  "name": "api-multi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yougrowth/api-multi.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yougrowth/api-multi/issues"
+  },
+  "homepage": "https://github.com/yougrowth/api-multi#readme",
+  "devDependencies": {},
+  "dependencies": {
+    "express": "^4.15.4"
+  }
+}

@@ -1,5 +1,7 @@
 const curso = require('./app/curso');
-const app = require('express')();
+const express = require('express');
+const app = express();
+const { Router } = express;
 
 
 app.get("/", function(req, res){

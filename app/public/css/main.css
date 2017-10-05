@@ -1,0 +1,106 @@
+/*MENU LATERAL*/
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #0ea89e;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.4s;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #fff;
+    display: block;
+    transition: 0.5s;
+    border-left: 0px solid #f6772a;
+}
+
+.sidenav a:not(:first-child):hover, .offcanvas a:focus{
+    color: #f1f1f1;
+    background-color: #009e9f;
+    border-left: 10px solid #f6772a;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+/*CONTEUDO*/
+#main {
+    transition: margin-left .5s;
+    padding: 0px;
+    background-color: #f7f7f7;
+    height: 100%;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+/*HEADER*/
+header{
+  width: 100%;
+  height: 80px;
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+.row{margin: 0px;}
+
+.openNav{
+  width: 50px;
+  content: "";
+  padding-top: 22.5px;
+  margin-left: 22.5px;
+  cursor: pointer;
+}
+
+.openNav .barra{
+  height: 5px;
+  width: 100%;
+  background-color: #0ea89e;
+  margin-bottom: 10px;
+}
+
+.openNav .barra:last-child{
+  margin-bottom: 0px;
+}
+
+.logo{
+  height: 80px;
+  width: 200px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-image: url("/assets/img/logo-completo.png");
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@media (max-width: 768px) {
+  .openNav .barra{
+    height: 4px;
+    width: 80}
+}
+
+@media (max-width: 350px) {
+  .logo{
+    height: 80px;
+    width: 150px;
+  }
+}

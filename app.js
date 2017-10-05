@@ -1,13 +1,7 @@
-const curso = require('./app/curso');
-const express = require('express');
-const app = express();
-const { Router } = express;
+/* importar as configurações do servidor */
+var app = require('./config/server');
 
-
-app.get("/", function(req, res){
-
-});
-
-app.listen(3000, function(){
-
-});
+/* parametrizar a porta de escuta */
+app.listen(80, function(){
+	console.log('Servidor online');
+})

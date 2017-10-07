@@ -1,15 +1,13 @@
-module.exports = function(application){
-
-    application.get('/todos-cursos', function(req, res){
-		res.send('Ver Cursos!');
+module.exports = function(app){
+  app.get('/todos-cursos', function(req, res){
+		app.app.controllers.curso.getCursos(app, req, res);
 	});
 
-    application.get('/cadastrar-curso', function(req, res){
+  app.get('/cadastrar-curso', function(req, res){
 		res.send('Cadastre Curso!');
 	});
 
-    application.get('/atualizar-curso', function(req, res){
+  app.get('/atualizar-curso', function(req, res){
 		res.send('Atualizar Curso!');
 	});
-
 }

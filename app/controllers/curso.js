@@ -1,8 +1,12 @@
-module.exports.curso = function(app, req, res){
-    var connection = app.config.database();
-    var clientesModel = new app.app.models.clientesDAO(connection);
+module.exports.getCursos = function(app, req, res){
+  var connection = app.config.database();
+  var cursoModel = new app.app.models.cursoDAO(connection);
 
-    clientesModel.getClientes(function (error, result) {
-      res.render('clientes/clientes', {clientes: result});
-    });
+  cursoModel.getCursos(function (error, result) {
+    res.format({
+      json: function(){res.json(result)},
+      html: function(){res.render('cursos/ver-cursos.ejs', {cursos: result})}
+    })
+  });
+
 }

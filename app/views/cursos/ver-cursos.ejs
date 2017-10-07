@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="/css/main.css" rel="stylesheet" type="text/css">
+    <title>Cursos</title>
+  </head>
+  <body>
+    <header class="row">
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn">&times;</a>
+        <a href="/todos-cursos">Ver Cursos</a>
+        <a href="/todos-cursos">Cadastrar Curso</a>
+      </div>
+
+      <div class="openNav">
+        <div class="barra"></div>
+        <div class="barra"></div>
+        <div class="barra"></div>
+      </div>
+
+      <div class="logo"></div>
+
+    </header>
+
+    <div class="banner">
+      <div class="banner-text">
+        <h1>Cursos</h1>
+      </div>
+    </div>
+
+    <div id="main">
+      <div class="row col-md-10 wrapper-box">
+          <div class="col-xs-12 col-sm-6 col-md-4">
+
+          <% for(i = 0; i < cursos.length ;i++){ %>
+            <div class="card">
+              <div class="card-image" style="background: url(/img/cursos/curso1.png) center center no-repeat rgb(255, 255, 255);"></div>
+              <div class="card-text">
+                <h2><%= cursos[i].nome %></h2>
+                <span><%= cursos[i].duracao %></span>
+                <span>R$<%= cursos[i].preco %></span>
+              </div>
+            </div>
+          <% } %>
+          
+        </div>
+      </div>
+    </div>
+
+    <footer class="col-sm-12">
+      <img src="/img/logo-branco-min.png" alt="">
+      <h2>Multi</h2>
+    </footer>
+  </body>
+
+  <script src="/js/main.js"></script>
+</html>
+

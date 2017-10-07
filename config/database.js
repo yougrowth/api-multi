@@ -7,14 +7,12 @@ var conecMySQL = function(){
     host : 'localhost',
     user : 'root',
     password : 'fiap',
-    database : 'sistema_produtos'
+    database : 'multi_database'
   }
 );
 }
 
-
-
 module.exports = function(){ // abre funcao
   console.log('Fez o autoload do modulo de conexao');
-    return conecMySQL;
+  return conecMySQL;
 } // fecha funcao

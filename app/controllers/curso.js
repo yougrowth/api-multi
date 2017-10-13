@@ -39,7 +39,9 @@ module.exports.insertCurso = function(app, req, res){
   var cursosModel = new app.app.models.cursoDAO(connection);
 
   cursosModel.insertCurso(curso, function(error, result){
-      console.log(error);
+      if(error){
+        res.send(error);
+      }
       res.redirect('/todos-cursos');
   });
 }

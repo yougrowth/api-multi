@@ -12,7 +12,7 @@
       <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn">&times;</a>
         <a href="/todos-cursos">Ver Cursos</a>
-        <a href="/todos-cursos">Cadastrar Curso</a>
+        <a href="/formulario-curso">Cadastrar Curso</a>
       </div>
 
       <div class="openNav">
@@ -33,20 +33,18 @@
 
     <div id="main">
       <div class="row col-md-10 wrapper-box">
-          <div class="col-xs-12 col-sm-6 col-md-4">
-
           <% for(i = 0; i < cursos.length ;i++){ %>
-            <div class="card">
-              <div class="card-image" style="background: url(/img/cursos/curso1.png) center center no-repeat rgb(255, 255, 255);"></div>
-              <div class="card-text">
-                <h2><%= cursos[i].nome %></h2>
-                <span><%= cursos[i].duracao %></span>
-                <span>R$<%= cursos[i].preco %></span>
+            <div class="col-xs-12 col-sm-6 col-md-4">
+              <div class="card">
+                <div class="card-image" style="background: url(/img/banner.png) center center no-repeat rgb(255, 255, 255);"></div>
+                <div class="card-text">
+                  <h2><%= cursos[i].nome %></h2>
+                  <span><%= cursos[i].duracao %></span>
+                  <span>R$<%= cursos[i].preco %></span>
+                </div>
               </div>
             </div>
           <% } %>
-          
-        </div>
       </div>
     </div>
 

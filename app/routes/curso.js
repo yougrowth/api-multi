@@ -3,11 +3,11 @@ module.exports = function(app){
 		app.app.controllers.curso.getCursos(app, req, res);
 	});
 
-  app.get('/cadastrar-curso', function(req, res){
-		res.send('Cadastre Curso!');
+  app.get('/formulario-curso', function(req, res){
+		app.app.controllers.curso.formularioCursos(app, req, res);
 	});
 
-  app.get('/atualizar-curso', function(req, res){
-		res.send('Atualizar Curso!');
+	app.post('/inserir-curso', function(req, res){
+		app.app.controllers.curso.insertCurso(app, req, res);
 	});
 }

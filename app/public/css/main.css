@@ -597,3 +597,71 @@ footer img{
     height: 300px;
   }
 }
+
+.container-fluid{
+  width: 100%;
+  padding: 0px;
+}
+
+.col-md-5{
+  padding: 0px;
+}
+
+.sobre-contato{
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.sobre-contato h2{
+  font-size: 60px;
+  margin: 30px 0px;
+  text-align: center;
+}
+
+input, input:focus, textarea, textarea:focus, select, select:focus, button, button:focus{
+  border-radius: 0px;
+  outline: none;
+  padding: 5px 15px;
+  box-shadow: none;
+  background-color: #10867e;
+  color: #fff;
+  font-size: 20px;
+  transition: all ease-in-out 300ms;
+}
+
+input, select, option, button{
+  height: 50px;
+}
+
+button{
+  margin-right: 20px;
+  margin-bottom: 30px;
+  border: none;
+  box-shadow: 0px 20px 10px -15px rgba(0,0,0,0.4);
+  cursor: pointer;
+  transition: all ease-in-out 300ms;
+}
+
+button:hover{
+  box-shadow: 0px 37px 20px -20px rgba(0,0,0,0.2);
+  transform: translate(0px, -4px) scale(1.05);
+}
+
+label{
+  font-size: 20px;
+}
+input:hover, input:focus, textarea:hover, textarea:focus, select:focus, select:hover{
+  cursor: pointer;
+  box-shadow: 0px 37px 20px -20px rgba(0,0,0,0.2);
+  transform: translate(0px, -2px) scale(1.005);
+}
+
+
+.ng-valid[required], .ng-valid.required{
+  border-left: 10px solid #0ea86c;
+}
+
+.ng-invalid:not(form){
+  border-left: 10px solid #e54a58;
+}
